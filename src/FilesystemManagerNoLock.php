@@ -16,7 +16,6 @@ class FilesystemManagerNoLock extends FM
      */
     public function createLocalDriver(array $config)
     {
-        dd('woop');
         $permissions = isset($config['permissions']) ? $config['permissions'] : [];
 
         $links = Arr::get($config, 'links') === 'skip'
